@@ -21,3 +21,8 @@ $routes->get('formulario', 'FormularioController::index');
 $routes->post('formulario/login', 'FormularioController::login');
 $routes->get('tablero', 'FormularioController::tablero');
 $routes->get('formulario/logout', 'FormularioController::logout');
+
+$routes->get('login', 'LoginController::index');
+$routes->post('login/autenticar', 'LoginController::authenticate');
+$routes->get('dashboard', 'dashboardController::index');
+$routes->get('login/logout', 'LoginController::cerrar_sesion');
